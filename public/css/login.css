@@ -1,0 +1,58 @@
+
+body{
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
+}
+
+
+/* Form */
+.form-login{
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+/* Button */
+button, input {
+    overflow: visible;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #33ab5c;
+    border-color: #33ab5c;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #33ab5c;
+    border-color: #33ab5c;
+}
+.btn:focus, .btn:hover {
+    text-decoration: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #14765a;
+    border-color: #14765a;
+}

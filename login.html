@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Dooho | ยินดีต้อนรับเข้าสู่ระบบ</title>
+
+    <!-- Boostrap 4 -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Login Css and js and scss -->
+    <link rel="stylesheet" href="/css/login.css">
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+
+    <!-- Good Font Prompt -->
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="text-center">
+    <script>
+            const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            onOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        Toast.fire({
+            icon: 'success',
+            title: 'Dooho พร้อมใช้งานในขณะนี้'
+        })
+        
+
+    </script>
+    <form class='form-login' action="/login" method="post">
+        <h1 class="h3 mb-3 font-weight-normal">Sign in | Dooho</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="กรุณาระบุข้อมูลผู้ใช้ของท่าน" name="username"
+                maxlength="30" required autofocus>
+        </div>
+        <div class="input-group mb-3">
+            <input type="password" class="form-control" placeholder="กรุณาระบุข้อมูลรหัสผ่าน" name="password"
+                maxlength="20" required>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">เข้าสู่ระบบ</button>
+    </form>
+
+</body>
+
+</html>
